@@ -1,0 +1,28 @@
+{
+  "name": "chapter-split",
+  "version": "1.0.0",
+  "description": "An example of splitting at chapter",
+  "scripts": {
+    "start": "webpack-dev-server --open"
+  },
+  "dependencies": {
+    "prosemirror-commands": "^0.21.0",
+    "prosemirror-example-setup": "^0.21.0",
+    "prosemirror-history": "^0.21.0",
+    "prosemirror-inputrules": "^0.21.0",
+    "prosemirror-keymap": "^0.21.0",
+    "prosemirror-model": "^0.21.0",
+    "prosemirror-schema-basic": "^0.21.0",
+    "prosemirror-state": "^0.21.0",
+    "prosemirror-view": "^0.21.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.5.1",
+    "css-loader": "^0.28.4",
+    "style-loader": "^0.18.1",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}

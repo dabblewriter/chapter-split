@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  background-color: #eee;
+}
+[contenteditable]:focus {
+  outline: none;
+}
+.empty {
+  position: relative;
+}
+.empty::before {
+  opacity: .25;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+.chapter {
+  width: 612px;
+  padding: 72px;
+  margin: 10px auto;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+  font: 16px sans-serif;
+  color: #444;
+}
+.title {
+  font: 3em serif;
+  text-align: center;
+  position: relative;
+}
+.title.empty::before {
+  content: 'Chapter';
+}
+.scene p.empty::before {
+  content: 'Once upon a time...';
+}
+.scene {
+  padding-bottom: 2em;
+  position: relative;
+}
+.scene + .scene {
+  padding-top: 2em;
+}
+.scene + .scene::before {
+  position: relative;
+  top: -2em;
+  display: block;
+  text-align: center;
+  content: ' ***';
+  letter-spacing: 4em;
+  color: #555;
+  line-height: 0;
+  white-space: pre;
+}
