@@ -1,5 +1,7 @@
 # Splitting nodes with required content
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/dabblewriter/chapter-split.svg)](https://greenkeeper.io/)
+
 ## Setup
 
 Install the node modules and run:
