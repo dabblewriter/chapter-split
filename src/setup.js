@@ -4,7 +4,7 @@ import { history } from 'prosemirror-history'
 import { keymap } from 'prosemirror-keymap'
 import { baseKeymap } from 'prosemirror-commands'
 import { Plugin } from 'prosemirror-state'
-import { buildKeymap } from 'prosemirror-example-setup'
+import { buildKeymap } from './keymap'
 import { Decoration, DecorationSet } from 'prosemirror-view'
 
 
@@ -19,6 +19,7 @@ export function placeholders() {
         state.doc.content.descendants((node, pos) => {
           if (node.type.name === 'title' || node.type.name === 'scene') {
             if (node.type.name === 'scene') {
+              if (node.content.childCount > 1) return;
               pos += 1;
               node = node.content.content[0];
             }
@@ -28,7 +29,8 @@ export function placeholders() {
             return true;
           }
         })
-        return DecorationSet.create(doc, set)
+
+        if (set.length) return DecorationSet.create(doc, set)
       }
     }
   });

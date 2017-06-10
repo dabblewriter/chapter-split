@@ -28,14 +28,15 @@ body {
 }
 .title {
   font: 3em serif;
+  margin-bottom: 2em;
   text-align: center;
   position: relative;
 }
 .title.empty::before {
   content: 'Chapter';
 }
-.scene p.empty::before {
-  content: 'Once upon a time...';
+.scene:first-of-type p.empty::before {
+  content: 'Once upon a time…';
 }
 .scene {
   padding-bottom: 2em;
