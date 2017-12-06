@@ -13,8 +13,8 @@ Your browser should open up to localhost:8080 with an editable page.
 
 ## Test
 
-In the browser you can type in a title and enter text into the first scene. Type "***" in a new paragraph to split a
-scene into two. You should be able to tell this happens because there will be a nicely formatted "*  *  *" separating
+In the browser you can type in a title and enter text into the first scene. Type `"***"` in a new paragraph to split a
+scene into two. You should be able to tell this happens because there will be a nicely formatted `"*  *  *"` separating
 the two scenes.
 
 Type "===" in an empty paragraph and you get an error in the console from trying to split the chapter. This is because
